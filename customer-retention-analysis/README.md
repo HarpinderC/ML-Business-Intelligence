@@ -6,20 +6,18 @@
 
 ---
 
-## Status: 🚧 Data Loading
+## Status: 🚧 Data Cleaning Complete
 
 ## Completed
-- ✅ Repository initialized
-- ✅ UCI Online Retail dataset loaded (541,909 transactions)
-- ✅ Notebook 01 created with initial data inspection
-- ✅ Requirements updated with openpyxl, xlrd
-
-## Dataset
-- **Source:** UCI Machine Learning Repository
-- **Size:** 541,909 rows, 8 columns
-- **Period:** December 2009 - December 2011
+- ✅ Dataset loaded (541,909 transactions)
+- ✅ Data quality filtering pipeline
+  - Removed cancelled orders (9,288 invoices)
+  - Filtered to UK-only (homogeneous market)
+  - Handled missing CustomerIDs
+- ✅ Clean dataset: 354,321 transactions (35% reduction)
+- ✅ Temporal split: Dec 2010 (train) → 2011 (validation)
+- ✅ Exported train.csv and validation.csv
 
 ## Next Steps
-- Data cleaning and quality filtering
-- UK-only market focus
-- Temporal train/validation split
+- Exploratory data analysis with visualizations
+- RFM metric computation
