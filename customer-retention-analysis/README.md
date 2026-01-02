@@ -6,17 +6,20 @@
 
 ---
 
-## Status: 🚧 Initial Setup
-
-Project structure created for customer retention analysis using the UCI Online Retail dataset.
+## Status: 🚧 Data Loading
 
 ## Completed
 - ✅ Repository initialized
-- ✅ Directory structure created (data/, notebooks/, models/, results/)
-- ✅ .gitignore configured for Python and data files
-- ✅ Basic requirements.txt
+- ✅ UCI Online Retail dataset loaded (541,909 transactions)
+- ✅ Notebook 01 created with initial data inspection
+- ✅ Requirements updated with openpyxl, xlrd
+
+## Dataset
+- **Source:** UCI Machine Learning Repository
+- **Size:** 541,909 rows, 8 columns
+- **Period:** December 2009 - December 2011
 
 ## Next Steps
-- Load UCI Online Retail dataset
-- Begin data exploration and cleaning
-- Build RFM metrics
+- Data cleaning and quality filtering
+- UK-only market focus
+- Temporal train/validation split
