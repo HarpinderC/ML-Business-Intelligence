@@ -6,18 +6,22 @@
 
 ---
 
-## Status: 🚧 Data Cleaning Complete
+## Status: 🚧 EDA In Progress
 
 ## Completed
-- ✅ Dataset loaded (541,909 transactions)
-- ✅ Data quality filtering pipeline
-  - Removed cancelled orders (9,288 invoices)
-  - Filtered to UK-only (homogeneous market)
-  - Handled missing CustomerIDs
-- ✅ Clean dataset: 354,321 transactions (35% reduction)
-- ✅ Temporal split: Dec 2010 (train) → 2011 (validation)
-- ✅ Exported train.csv and validation.csv
+- ✅ Data cleaning pipeline (541,909 → 354,321 transactions)
+- ✅ Temporal train/validation split
+- ✅ Comprehensive EDA with 13 visualizations
+  - Missing value analysis, country distribution
+  - Temporal patterns, purchase frequency, revenue distribution
+  - Top products, basket analysis
+- ✅ All figures saved at 300 DPI to results/figures/
+
+## Dataset
+- **Source:** UCI Online Retail (UK E-Commerce)
+- **Cleaned Size:** 354,321 transactions, 815 customers
+- **Revenue:** £7.3M total
 
 ## Next Steps
-- Exploratory data analysis with visualizations
-- RFM metric computation
+- RFM feature computation
+- Probabilistic CLV modeling (BG/NBD, Gamma-Gamma)
