@@ -1,0 +1,15 @@
+Metric,Value
+Total Transactions (Original),"541,909"
+Total Transactions (Cleaned),"354,321"
+Unique Customers,"3,920"
+Date Range,2010-12-01 to 2011-12-09
+Total Revenue,"£7,308,391.55"
+Training Transactions,"23,942"
+Validation Transactions,"330,379"
+Training Customers,815
+Validation Customers,"3,813"
+Customer Overlap,708 (18.6%)
+Avg Purchase Frequency,1.58 purchases
+Avg Customer Lifetime Value,£611.86
+One-time Customers,574 (70.4%)
+Repeat Customers,241 (29.6%)
