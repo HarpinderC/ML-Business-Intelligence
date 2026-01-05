@@ -6,22 +6,26 @@
 
 ---
 
-## Status: 🚧 Feature Foundation Complete
+## Status: 🚧 CLV Modeling Complete
 
 ## Completed
-- ✅ Data cleaning pipeline (541,909 → 354,321 transactions)
+- ✅ Full data preprocessing pipeline
 - ✅ Comprehensive EDA with 13+ visualizations
-- ✅ RFM metrics computed per customer
-  - Recency, Frequency, Monetary, Tenure
-- ✅ Temporal split visualization
-- ✅ RFM distributions and correlations analyzed
-- ✅ Data summary exported
+- ✅ RFM feature computation
+- ✅ Probabilistic CLV modeling
+  - BG/NBD model for purchase frequency prediction
+  - Gamma-Gamma model for monetary value estimation
+  - Validated against actual 2011 data (0.699 correlation)
+- ✅ CLV predictions at 90d, 180d, 365d horizons
+- ✅ Model artifacts saved (bgf_model.pkl, ggf_model.pkl)
+- ✅ 18 visualizations total
 
-## Dataset
-- **Source:** UCI Online Retail (UK E-Commerce)
-- **Customers:** 815 unique UK customers
-- **Revenue:** £7.3M total transaction value
+## Key Results
+| Model | Metric | Value |
+|-------|--------|-------|
+| BG/NBD | Frequency correlation | 0.699 |
+| Gamma-Gamma | Monetary estimation | Strong fit |
 
 ## Next Steps
-- Probabilistic CLV modeling (BG/NBD + Gamma-Gamma)
-- Feature engineering for churn prediction
+- Feature engineering (velocity, temporal, engagement metrics)
+- Churn prediction modeling

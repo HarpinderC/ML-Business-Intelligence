@@ -1,0 +1,15 @@
+Metric,Value
+Training Customers,815
+Returning Customers,192
+One-time Customers,623
+Median Alive Probability,1.000
+Predicted Active (>0.5),815
+Actually Active in 2011,708
+Avg Predicted 365d Purchases,8.54
+Avg Actual Purchases,7.58
+Avg Predicted 365d CLV (£),£4093.42
+Avg Actual Revenue (£),£3829.01
+Purchase Prediction Correlation,0.699
+Revenue Prediction Correlation,0.427
+Total Predicted 365d CLV (£),"£3,336,140.26"
+Total Actual Revenue (£),"£3,120,639.71"
