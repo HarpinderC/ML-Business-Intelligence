@@ -1,0 +1,8 @@
+Metric,Value
+Total Customers,815
+Total Features,30
+Churn Rate (%),26.9%
+Active Customers,596
+Churned Customers,219
+Top Positive Correlation,prob_alive: 0.244
+Top Negative Correlation,purchase_gap_cv: -0.215

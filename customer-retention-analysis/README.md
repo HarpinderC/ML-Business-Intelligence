@@ -6,26 +6,21 @@
 
 ---
 
-## Status: 🚧 CLV Modeling Complete
+## Status: 🚧 Feature Engineering Complete
 
 ## Completed
 - ✅ Full data preprocessing pipeline
-- ✅ Comprehensive EDA with 13+ visualizations
-- ✅ RFM feature computation
-- ✅ Probabilistic CLV modeling
-  - BG/NBD model for purchase frequency prediction
-  - Gamma-Gamma model for monetary value estimation
-  - Validated against actual 2011 data (0.699 correlation)
-- ✅ CLV predictions at 90d, 180d, 365d horizons
-- ✅ Model artifacts saved (bgf_model.pkl, ggf_model.pkl)
-- ✅ 18 visualizations total
-
-## Key Results
-| Model | Metric | Value |
-|-------|--------|-------|
-| BG/NBD | Frequency correlation | 0.699 |
-| Gamma-Gamma | Monetary estimation | Strong fit |
+- ✅ Comprehensive EDA (13+ visualizations)
+- ✅ Probabilistic CLV modeling (BG/NBD + Gamma-Gamma)
+- ✅ Feature engineering: 30 features across 5 categories
+  - RFM features (6): Recency, Frequency, Monetary, Tenure, etc.
+  - Probabilistic features (8): CLV predictions, alive probability
+  - Velocity features (6): Revenue/quantity/gap velocity
+  - Temporal features (6): Day diversity, weekend ratio, regularity
+  - Engagement features (4): Product diversity, exploration rate
+- ✅ Churn definition: 180-day no-purchase window (26.9% rate)
+- ✅ 21 visualizations total
 
 ## Next Steps
-- Feature engineering (velocity, temporal, engagement metrics)
-- Churn prediction modeling
+- Supervised churn prediction modeling
+- Model comparison and evaluation
