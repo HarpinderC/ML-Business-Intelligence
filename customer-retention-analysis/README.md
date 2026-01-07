@@ -6,21 +6,24 @@
 
 ---
 
-## Status: 🚧 Feature Engineering Complete
+## Status: 🚧 Baseline Models Trained
 
 ## Completed
-- ✅ Full data preprocessing pipeline
-- ✅ Comprehensive EDA (13+ visualizations)
-- ✅ Probabilistic CLV modeling (BG/NBD + Gamma-Gamma)
-- ✅ Feature engineering: 30 features across 5 categories
-  - RFM features (6): Recency, Frequency, Monetary, Tenure, etc.
-  - Probabilistic features (8): CLV predictions, alive probability
-  - Velocity features (6): Revenue/quantity/gap velocity
-  - Temporal features (6): Day diversity, weekend ratio, regularity
-  - Engagement features (4): Product diversity, exploration rate
-- ✅ Churn definition: 180-day no-purchase window (26.9% rate)
-- ✅ 21 visualizations total
+- ✅ Full data preprocessing + feature engineering (30 features)
+- ✅ Probabilistic CLV modeling (0.699 correlation)
+- ✅ Baseline churn models trained
+  - Logistic Regression (AUC: 0.58)
+  - Random Forest with class weighting (AUC: 0.64)
+- ✅ 3-fold stratified cross-validation
+- ✅ Feature scaling pipeline
+
+## Results So Far
+| Model | AUC | F1 (Churn) |
+|-------|-----|------------|
+| Logistic Regression | 0.58 | - |
+| Random Forest | 0.64 | - |
 
 ## Next Steps
-- Supervised churn prediction modeling
-- Model comparison and evaluation
+- Add gradient boosting models (XGBoost, LightGBM, CatBoost)
+- Complete model comparison
+- Hyperparameter tuning
