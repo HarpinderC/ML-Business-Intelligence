@@ -6,24 +6,28 @@
 
 ---
 
-## Status: 🚧 Baseline Models Trained
+## Status: 🚧 Model Comparison Complete
 
 ## Completed
 - ✅ Full data preprocessing + feature engineering (30 features)
 - ✅ Probabilistic CLV modeling (0.699 correlation)
-- ✅ Baseline churn models trained
-  - Logistic Regression (AUC: 0.58)
-  - Random Forest with class weighting (AUC: 0.64)
-- ✅ 3-fold stratified cross-validation
-- ✅ Feature scaling pipeline
+- ✅ 6-model benchmark comparison
+- ✅ ROC curves and model comparison visualizations
+- ✅ Honest assessment: sample size limits accuracy
 
-## Results So Far
-| Model | AUC | F1 (Churn) |
-|-------|-----|------------|
-| Logistic Regression | 0.58 | - |
-| Random Forest | 0.64 | - |
+## Model Comparison
+| Model | AUC | Notes |
+|-------|-----|-------|
+| Random Forest | 0.64 | Best performer |
+| Gradient Boosting | ~0.62 | - |
+| XGBoost | ~0.61 | - |
+| LightGBM | ~0.60 | - |
+| CatBoost | ~0.61 | - |
+| Logistic Regression | 0.58 | Baseline |
+
+**Note:** Small dataset (815 customers) limits supervised model performance. Model used as diagnostic tool.
 
 ## Next Steps
-- Add gradient boosting models (XGBoost, LightGBM, CatBoost)
-- Complete model comparison
-- Hyperparameter tuning
+- Enhancement experiments (SMOTE, feature interactions)
+- SHAP explainability analysis
+- Business strategy development

@@ -1,0 +1,12 @@
+Metric,Value
+Total Models Compared,6
+Best Model,Random Forest (Tuned)
+Best ROC-AUC,0.6469
+Best F1-Score,0.3830
+Best Recall,0.4091
+Best Precision,0.3600
+Tuning Applied,Yes
+Training Samples,570
+Test Samples,245
+Number of Features,30
+Class Balance (Churn%),26.9%
