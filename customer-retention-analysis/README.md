@@ -6,28 +6,22 @@
 
 ---
 
-## Status: 🚧 Model Comparison Complete
+## Status: 🚧 Model Optimization Complete
 
 ## Completed
 - ✅ Full data preprocessing + feature engineering (30 features)
 - ✅ Probabilistic CLV modeling (0.699 correlation)
-- ✅ 6-model benchmark comparison
-- ✅ ROC curves and model comparison visualizations
-- ✅ Honest assessment: sample size limits accuracy
+- ✅ 6-model benchmark comparison (Random Forest best: AUC 0.64)
+- ✅ Enhancement experiment:
+  - SMOTE oversampling (decreased performance - documented transparently)
+  - Hyperparameter tuning on Random Forest
+  - Feature interaction engineering
+- ✅ Best model: Random Forest with class weighting (saved)
 
-## Model Comparison
-| Model | AUC | Notes |
-|-------|-----|-------|
-| Random Forest | 0.64 | Best performer |
-| Gradient Boosting | ~0.62 | - |
-| XGBoost | ~0.61 | - |
-| LightGBM | ~0.60 | - |
-| CatBoost | ~0.61 | - |
-| Logistic Regression | 0.58 | Baseline |
-
-**Note:** Small dataset (815 customers) limits supervised model performance. Model used as diagnostic tool.
+## Honest Assessment
+The churn classifier achieves 0.64 AUC - below production threshold. This is due to small sample size (815 customers). The model is repositioned as a **diagnostic tool** for behavioral pattern identification rather than production-ready predictor.
 
 ## Next Steps
-- Enhancement experiments (SMOTE, feature interactions)
 - SHAP explainability analysis
-- Business strategy development
+- Business segmentation strategy
+- Deployment dashboard
