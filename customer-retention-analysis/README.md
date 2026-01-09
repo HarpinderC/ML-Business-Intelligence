@@ -6,22 +6,23 @@
 
 ---
 
-## Status: 🚧 Model Optimization Complete
+## Status: 🚧 Explainability Analysis Complete
 
 ## Completed
-- ✅ Full data preprocessing + feature engineering (30 features)
-- ✅ Probabilistic CLV modeling (0.699 correlation)
-- ✅ 6-model benchmark comparison (Random Forest best: AUC 0.64)
-- ✅ Enhancement experiment:
-  - SMOTE oversampling (decreased performance - documented transparently)
-  - Hyperparameter tuning on Random Forest
-  - Feature interaction engineering
-- ✅ Best model: Random Forest with class weighting (saved)
+- ✅ Full ML pipeline (data → features → models)
+- ✅ Probabilistic CLV (BG/NBD + Gamma-Gamma, 0.699 correlation)
+- ✅ 6-model churn comparison (Random Forest best: AUC 0.64)
+- ✅ SHAP explainability analysis
+  - Global feature importance ranking
+  - Velocity vs static features (31% vs 69%)
+  - High-value customer analysis (13% vs 27% churn rate)
+- ✅ 26 visualizations total
 
-## Honest Assessment
-The churn classifier achieves 0.64 AUC - below production threshold. This is due to small sample size (815 customers). The model is repositioned as a **diagnostic tool** for behavioral pattern identification rather than production-ready predictor.
+## Key Insights
+- **Historical spend > Behavioral change** (69% vs 31% predictive power)
+- **High-value customers churn less** (13% vs 27%)
+- Top predictors: Monetary, predicted_purchases_180d, CLV_180d
 
 ## Next Steps
-- SHAP explainability analysis
-- Business segmentation strategy
-- Deployment dashboard
+- Business segmentation and ROI strategy
+- Documentation and deployment

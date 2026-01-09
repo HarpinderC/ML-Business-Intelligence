@@ -17,6 +17,9 @@ catboost==1.2.2
 # Probabilistic CLV Modeling
 lifetimes==0.11.3
 
+# Explainability
+shap==0.44.0
+
 # Visualization
 matplotlib==3.8.2
 seaborn==0.13.1
