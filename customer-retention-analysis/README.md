@@ -6,23 +6,25 @@
 
 ---
 
-## Status: 🚧 Explainability Analysis Complete
+## Status: 🚧 Business Strategy Complete
 
 ## Completed
-- ✅ Full ML pipeline (data → features → models)
-- ✅ Probabilistic CLV (BG/NBD + Gamma-Gamma, 0.699 correlation)
-- ✅ 6-model churn comparison (Random Forest best: AUC 0.64)
-- ✅ SHAP explainability analysis
-  - Global feature importance ranking
-  - Velocity vs static features (31% vs 69%)
-  - High-value customer analysis (13% vs 27% churn rate)
-- ✅ 26 visualizations total
+- ✅ Full ML pipeline with explainability
+- ✅ 4-quadrant risk-value segmentation:
+  - **Save At All Costs:** 178 customers (21.8%), £6,540 avg CLV
+  - **Loyalists:** 28 customers (3.4%), £16,752 avg CLV
+  - **Let Go:** 609 customers (74.7%), £2,796 avg CLV
+- ✅ Campaign ROI analysis:
+  - Budget: £6,387 | Break-even: 0.6% | Projected ROI: £225K+
+- ✅ Executive summary generated
+- ✅ CRM-ready customer segment CSV
 
-## Key Insights
-- **Historical spend > Behavioral change** (69% vs 31% predictive power)
-- **High-value customers churn less** (13% vs 27%)
-- Top predictors: Monetary, predicted_purchases_180d, CLV_180d
+## Business Impact
+- Identified **178 high-value at-risk customers** worth £6,540 avg CLV
+- Proposed **£6,387 retention campaign** with break-even at 0.6% success rate
+- Projected **£225K+ net ROI** at conservative 20% retention rate
 
 ## Next Steps
-- Business segmentation and ROI strategy
-- Documentation and deployment
+- Documentation suite (data quality, GDPR, feature definitions)
+- Streamlit deployment dashboard
+- Final README and portfolio polish

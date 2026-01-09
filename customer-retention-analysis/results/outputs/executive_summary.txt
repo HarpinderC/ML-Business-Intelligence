@@ -1,0 +1,90 @@
+
+================================================================================
+CUSTOMER RETENTION STRATEGY: EXECUTIVE SUMMARY
+================================================================================
+
+1. MODEL PERFORMANCE
+────────────────────────────────────────────────────────────────────────────────
+• Predictive Model: Random Forest (ROC-AUC 0.64)
+• Dataset: 815 UK e-commerce customers
+• Performance Note: Small sample size limits predictive accuracy
+• Usage: Diagnostic tool for behavioral pattern identification
+
+2. KEY CHURN DRIVERS (SHAP Analysis)
+────────────────────────────────────────────────────────────────────────────────
+Top 5 behavioral signals:
+
+  3. Monetary (SHAP: 0.0392)
+  10. predicted_purchases_180d (SHAP: 0.0261)
+  9. predicted_purchases_90d (SHAP: 0.0259)
+  13. CLV_180d (SHAP: 0.0238)
+  8. predicted_purchases_30d (SHAP: 0.0232)
+
+3. VELOCITY VS. STATIC FEATURES
+────────────────────────────────────────────────────────────────────────────────
+• Velocity (behavioral change): 30.7% of predictive power
+• Static RFM (historical): 69.3% of predictive power
+→ Insight: Historical metrics remain primary indicators
+
+4. HIGH-VALUE CUSTOMER RISK
+────────────────────────────────────────────────────────────────────────────────
+• High-Value Customers (top 25% CLV): 206 customers
+• High-Value Churn Rate: 13.1%
+• Overall Churn Rate: 26.9%
+• Risk Premium: -13.8 percentage points
+
+5. SEGMENTATION MATRIX
+────────────────────────────────────────────────────────────────────────────────
+
+• Save At All Costs: 178.0 customers (21.8%), Avg CLV £6540.04
+• Loyalists: 28.0 customers (3.4%), Avg CLV £16752.19
+• Steady Base: nan customers (nan%), Avg CLV £nan
+• Let Go: 609.0 customers (74.7%), Avg CLV £2796.31
+
+6. INTERVENTION ROI (20% Discount Campaign)
+────────────────────────────────────────────────────────────────────────────────
+Target: "Save At All Costs" segment (178 customers)
+
+Campaign Economics:
+• Cost per customer: £35.88
+• Value per saved customer: £6509.16
+• Total campaign budget: £6,387.25
+
+Break-Even Analysis:
+• Minimum retention rate: 0.6%
+• Must save: 1 out of 178 customers
+
+ROI Scenarios:
+• 20% retention → Net ROI: £225,338.80
+• 30% retention → Net ROI: £341,201.83
+• 40% retention → Net ROI: £457,064.86
+
+7. RECOMMENDATIONS
+────────────────────────────────────────────────────────────────────────────────
+Priority 1: Launch targeted retention campaign for "Save At All Costs" segment
+  → 178 high-value, high-risk customers
+  → 20% discount offer (personalized communication)
+  → Expected break-even at 0.6% retention
+
+Priority 2: Monitor behavioral velocity signals
+  → Track revenue_velocity, purchase_gap changes
+  → Early warning system for declining engagement
+
+Priority 3: Protect "Loyalists" segment
+  → 28.0 high-value, low-risk customers
+  → VIP program, exclusive benefits
+  → Prevention better than rescue
+
+Priority 4: Optimize "Let Go" segment investment
+  → 609.0 low-value, high-risk customers
+  → Minimal intervention (automated win-back only)
+  → Focus resources on high-value segments
+
+================================================================================
+NEXT STEPS:
+1. Approve campaign budget: £6,387.25
+2. Design personalized discount offers
+3. Implement behavioral monitoring dashboard
+4. A/B test retention strategies (20% discount vs. free shipping vs. loyalty points)
+5. Track campaign performance weekly
+================================================================================
