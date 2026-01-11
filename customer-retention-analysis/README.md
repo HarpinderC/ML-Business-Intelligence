@@ -6,18 +6,25 @@
 
 ---
 
-## Status: 🚧 Documentation Complete
+## Status: 🚧 Dashboard Deployed
 
 ## Completed
 - ✅ Full ML pipeline with business strategy
-- ✅ 30 publication-quality visualizations
-- ✅ Documentation suite:
-  - Data quality report
-  - Feature definitions (all 30 features)
-  - Business recommendations for marketing leadership
-  - GDPR compliance notes
-  - Intervention ROI calculator
-- ✅ Results folder READMEs
+- ✅ Complete documentation suite
+- ✅ Interactive Streamlit dashboard:
+  - Customer lookup with CLV and churn prediction
+  - SHAP explanations for individual predictions
+  - Segment dashboard with strategies
+  - Risk-value matrix visualization
+  - ROI calculator with scenario analysis
+  - Batch scoring capability
+- ✅ Pathlib throughout for cross-platform compatibility
+
+## Quick Start
+```bash
+pip install -r requirements.txt
+streamlit run app/streamlit_app.py
+```
 
 ## Business Impact
 - **178 high-value at-risk customers** identified
@@ -25,6 +32,5 @@
 - **4-quadrant segmentation** for resource optimization
 
 ## Next Steps
-- Interactive Streamlit dashboard
 - Demo screenshots
-- Final README and portfolio polish
+- Final comprehensive README
